@@ -1,3 +1,4 @@
+from cgi import parse_qsl, escape
 def wsgi_application(environ, start_response):
 
     status = '200 OK'
@@ -10,6 +11,5 @@ def wsgi_application(environ, start_response):
             for ch in d:
                 data.append(' = '.join(ch))
                 data.append('<br>')
-    output_line = sum(len(line) for line int data)
     start_response(status, headers)
     return data
