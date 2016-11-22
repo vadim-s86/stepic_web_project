@@ -7,3 +7,5 @@ sudo /etc/init.d/gunicorn restart
 sudo /etc/init.d/mysql start
 git config --global user.email "vadim.s86@ya.ru"
 git config --global user.name "vadim-s86"
+mysql -u root -e "create database ask_project"
+mysql -u root -e "GRANT ALL PRIVILEGES ON ask_project.* TO 'ask'@'localhost' IDENTIFIED BY '1234'"
