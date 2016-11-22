@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cc0cf29-a67d-4642-97aa-7eb6a181588c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ask/ask/settings.py" afterPath="$PROJECT_DIR$/ask/ask/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ask/qa/models.py" afterPath="$PROJECT_DIR$/ask/qa/models.py" />
     </list>
     <ignored path="stepic_web_project.iws" />
@@ -26,8 +25,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ask/qa/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+            <state relative-caret-position="374">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -370,8 +369,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ask/qa/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+        <state relative-caret-position="374">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
