@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 class Question(models.Model):
-	objects = QuestionManager()
+	QuestionManager = models.Manager()
 	title = models.CharField(max_length=255)
 	text = models.TextField()
 	added_at = models.DateTimeField(blank=True, auto_now_add=True)
