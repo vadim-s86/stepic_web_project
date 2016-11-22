@@ -3,11 +3,11 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 class QuestionManager(models.Manager):
-    def new():
-        pass
+  def new(self):
+    return super(QuestionManager, self).get_query_set().all().order_by('-added_at')
 
-    def popular():
-        pass
+  def popular(self):
+    return super(QuestionManager, self).get_query_set().all().order_by('-rating')
 
 class Question(models.Model):
     object = QuestionManager();
@@ -15,11 +15,11 @@ class Question(models.Model):
     text = models.TextField()
     added_at = models.DateTimeField(blank=True, auto_now_add=True)
     rating = models.IntegerField(default=0)
-    author = models.ForeignKey(User, default='x')
+    author = models.ForeignKey(User,  related_name='question_author')
     likes = models.ManyToManyField(related_name='question_like_user')
 
 class Answer(models.Model):
     text = models.TextField()
     added_at = models.DateTimeField(auto_now_add=True)
     question = models.ForeignKey(Question, null=True, on_delete=models.SET_NULL)
-    author = models.ForeignKey(User, default='x')
+    author = models.ForeignKey(User)
