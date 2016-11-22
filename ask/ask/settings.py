@@ -36,7 +36,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'qa',
+    'qa'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -59,7 +59,6 @@ WSGI_APPLICATION = 'ask.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'ask_project',
         'NAME': 'ask_project',
 		'USER': 'ask',
         'PASSWORD': '1234',
