@@ -33,7 +33,7 @@ def popular(request):
 
 @require_GET
 def question(request, pk=id):
-    question = get_object_or_404(Question, id=id)
+    question = get_object_or_404(Question, id=pk)
     return render(request, 'qa/question.html', {
         'question': question,
     })
