@@ -3,11 +3,6 @@ CONFIG = {
     'environment': {
         'PYTHONPATH': '/home/box/web/ask',
     },
-    # 'working_dir': '/',
-
-    # 'user': 'www-data',
-
-    # 'group': 'www-data',
     'args': (
         '--bind=0.0.0.0:8000',
         '--workers=4',
